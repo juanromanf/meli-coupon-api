@@ -1,0 +1,23 @@
+server:
+  port: 9090
+
+logging:
+  level:
+    com.example.api: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: TRACE
+
+spring:
+  http:
+    log-request-details: true
+
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: SNAKE_CASE
+    deserialization:
+      FAIL_ON_UNKNOWN_PROPERTIES: true
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+
+apis:
+  ml:
+    host: https://api.mercadolibre.com
