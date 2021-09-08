@@ -39,6 +39,12 @@ Local endpoint URL:
 POST http://localhost:9090/coupon
 ```
 
+AWS endpoint URL:
+
+```
+POST http://ec2co-ecsel-iowenwx86fem-750773184.us-east-2.elb.amazonaws.com:9090/coupon
+```
+
 Sample payload
 ```
 curl --location --request POST 'http://localhost:9090/coupon' \
